@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    padding: 10px;
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+.menu{
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu>span{
+    height: fit-content;
+}
+.menu>span>img{
+    object-fit:cover;
+    max-width: 47px;
+    padding: 5px;
+}
+.gap>span{
+    padding-left: 5vw;
+}
+header>img{
+    padding: 30px;
+    object-fit: cover;
+    max-width: 400px;
+}
+.announce{
+    display: flex;
+    font-size: small;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #ED252F;
+}
+.announce>h2>span{
+    font-weight:600;
+}
+.announce>h2{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+main>h2{
+    font-size: x-large;
+    font-family: "Roboto", sans-serif;
+    font-weight:normal;
+    width: 100%;
+}
+main>h2>span{
+    font-weight:bold;
+}
+.xcont{
+    display: flex;
+    flex-direction: row;
+}
+.xcont>article{
+    width:50%;
+}
+.img{
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    align-content: center;
+}
+.img>img{
+    width: 100%;
+    object-fit: cover;
+}
+.shop{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "Roboto", sans-serif;
+}
+.shop>*{
+    margin-left: 30px;
+}
+.shop>h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+}
+.shop>h3{
+    font-weight: 300;
+}
+button{
+    cursor: pointer;
+    background-color: #ED252F;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-weight: 900;
+
+}
+footer{
+    height: fit-content ;
+    align-items: center;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    background-color: #1E1E28;
+    row-gap: 0px;
+    column-gap: 40px;
+}
+footer>h2{
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+@media screen and (max-width: 940px){
+    .menu>span>img{
+        object-fit:cover;
+        max-width: 34px;
+        padding: 5px;
+    }
+    header>img{
+        justify-content: center;
+        object-fit: cover;
+        width: 350px;
+    }
+    .shop>*{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 650px){
+    .announce>h2{
+        font-size: 3.3vw;
+        font-weight:400;
+    }
+    .menu>span>img{
+        object-fit:cover;
+        max-width: 26px;
+        padding: 5px;
+    }
+    header>img{
+        object-fit:contain;
+        width: 40vw;
+        min-width: 100px;
+    }
+    .menu>span{
+        padding: 3vw;
+        margin: 0px;
+    }
+    .xcont{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .xcont>article{
+        min-width: 200px;
+    }
+    .xcont>:first-child{
+        order: 2;
+    }
+    .shop>*{
+        margin-left: 0px;
+    }
+    .shop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 350px){
+  main>h2{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-weight:normal;
+    width: 100%;
+  }
+  .shop>h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: large;
+  }
+  .shop>h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+  }
+  }
+  @media screen and (max-width: 166px){
+    header{
+        padding: 0;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        row-gap: 20px;
+       }
+    header>img{
+        align-self: center;
+        justify-self: center;
+        order:1;
+    }
+    .gap{
+        flex-wrap: nowrap;
+    }
+    .gap>span{
+        padding-left: 00vw;
+    }
+}
+@media screen and (max-width: 140px){
+    header>div{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+
+}
